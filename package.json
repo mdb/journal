@@ -1,0 +1,12 @@
+{
+  "author": "Mike Ball",
+  "name": "journal",
+  "description": "Wordpress Journal Theme",
+  "version": "0.0.1",
+  "homepage": "http://mikeball.us",
+  "dependencies": {
+    "grunt": "~0.3.11",
+    "grunt-css": "~0.2.1",
+    "grunt-compass": "~0.2.12"
+  }
+}
