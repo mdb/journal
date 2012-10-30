@@ -33,7 +33,7 @@ module.exports = function(grunt) {
     },
     cssmin: {
       dist: {
-        src: ['<banner:meta.wpblock>', '../style.css'],
+        src: ['<banner:meta.wpblock>', 'src/styles/stylesheets/style.css'],
         dest: 'build/style.css'
       }
     },
