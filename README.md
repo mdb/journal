@@ -8,7 +8,7 @@ Largely just a rough-around-the-edges experiment in better-managing an old Wordp
 
 ## Usage
 
-journal requires Node.js
+journal requires Node.js, sass, and compass.
 
 Build the theme:
     cd journal
