@@ -5,3 +5,17 @@
   font-size: $secondary_font_size;
   color: $secondary_text_color;
 }
+
+@mixin standard_heading {
+  font-size: 14px;
+  color: #000;
+}
+
+@mixin top_level_heading {
+  @include standard_heading;
+  font-weight: normal;
+  margin-bottom: 7px;
+  border-top: 1px dashed $text_color;
+  border-bottom: 1px dashed #ccc;
+  padding: 5px 0;
+}

@@ -1,0 +1,40 @@
+@import "partials/global_imports";
+
+.secondary-content {
+  section {
+    margin-bottom:20px;
+  }
+
+  h3 {
+    @include top_level_heading;
+  }
+
+  .search h3 {
+    border-bottom:none;
+    padding-bottom:0;
+  }
+
+  p {
+    @include secondary_text;
+  }
+
+  ul {
+    margin-bottom:10px;
+
+    li {
+      list-style-type: none;
+
+      a {
+        @include secondary_text;
+      }
+    }
+  }
+
+  form {
+    margin-bottom: 10px;
+
+    input {
+      width: 90%;
+    }
+  }
+}

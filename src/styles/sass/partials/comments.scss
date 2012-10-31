@@ -1,0 +1,29 @@
+@import "partials/global_imports";
+
+.comment {
+  h4 {
+    @include top_level_heading;
+  }
+  
+  ol li {
+    margin-left:0;
+  }
+  
+  ol li label {
+    @include secondary_text;
+  }
+  
+  ol li textarea {
+    width: 70%; 
+  }
+}
+  
+.primary-content .comment {
+  ol li input {
+    width:70%;
+
+    &.button {
+      width: auto;
+    }
+  }
+}

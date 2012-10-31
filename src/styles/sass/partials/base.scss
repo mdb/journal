@@ -2,7 +2,8 @@
 
 // general
 * {
-  margin:0; padding:0;
+  margin:0;
+  padding:0;
 }
 
 body {
@@ -18,13 +19,13 @@ article, section, header, nav, footer, small, time, form, input, button {
 }
 
 cite {
-  font-style:normal;
+  font-style: normal;
 }
 
 pre {
   background: $pale_background;
-  padding:0 10px 10px 10px;
-  margin:5px 0;
+  padding: 0 10px 10px 10px;
+  margin: 5px 0;
 }
 
 code {
@@ -44,44 +45,27 @@ strong {
 }
 
 // headings
-h1 {
-  font-size: 14px;
-}
-
-h1 a {
-  color: #000;
-  font-size: 14px;
-  text-decoration: none;
-}
-
 h2 {
-  font-size: 14px;
-  margin-bottom: 7px;
-  border-top: 1px dashed #555;
-  border-bottom: 1px dashed #ccc;
-  padding: 5px 0;
-  color: #000;
+  @include top_level_heading;
 
   a {
-    text-decoration:none;
-    color:#000;
-    font-size:14px;
+    @include top_level_heading;
+    text-decoration: none;
+    border: none;
 
     &:hover {
-      text-decoration:underline;
+      text-decoration: underline;
     }
   }
 }
 
 h3 {
-  color: #000;
-  font-size: 14px;
+  @include standard_heading;
 }
 
 h4 {
-  color: #000;
+  @include standard_heading;
   margin-bottom: 15px;
-  font-size: 14px;
 }
 
 p {
@@ -93,7 +77,7 @@ button {
 }
 
 button, input {
-  font-size: 11px;
+  font-size: $secondary_font_size;
 }
 
 input, textarea {
