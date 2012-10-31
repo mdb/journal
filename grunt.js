@@ -14,13 +14,13 @@ module.exports = function(grunt) {
         '* http://www.yoursite.com/\n' +
         '* Copyright (c) <%= grunt.template.today("yyyy") %> ' +
         'Your Company; Licensed MIT */',
-      wpblock: '/*! \n' + 
-        'Theme Name: Journal \n' +
-        'Theme URI: http://www.mikeball.us \n' +
-        'Description: Basic Wordpress Journal Theme \n' +
-        'Author: Mike Ball \n' +
-        'Author URI: http://www.mikeball.us \n' +
-        'Version: 0.0.1 \n' + 
+      wpblock: '/*\n' + 
+        'Theme Name: Journal\n' +
+        'Theme URI: http://www.mikeball.us\n' +
+        'Description: Basic Wordpress Journal Theme\n' +
+        'Author: Mike Ball\n' +
+        'Author URI: http://www.mikeball.us\n' +
+        'Version: <%= meta.version %>\n' + 
         '*/',
       wpphpbanner: '<?php /*\n' +
         'blahp\n' +
@@ -61,6 +61,9 @@ module.exports = function(grunt) {
         src: 'src/php',
         dest: 'build'
       }
+    },
+    environments: {
+      dev: '/Applications/MAMP/htdocs/mdb/wp-content/themes/journal'
     }
   });
 
@@ -84,6 +87,12 @@ module.exports = function(grunt) {
     grunt.log.write(php);
   });
 
+  grunt.registerTask('deploy', function(environment) {
+    var env = grunt.config.get('environments')[environment];
+    wrench.copyDirSyncRecursive(grunt.config.get('php').dist.dest, env);
+  });
+
+  // Helpers
   grunt.registerHelper('copyPHP', function () {
     var php = grunt.config.get('php');
     wrench.copyDirSyncRecursive(php.dist.src, php.dist.dest);
