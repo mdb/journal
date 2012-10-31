@@ -7,6 +7,8 @@
   "dependencies": {
     "grunt": "~0.3.11",
     "grunt-css": "~0.2.1",
-    "grunt-compass": "~0.2.12"
+    "grunt-compass": "~0.2.12",
+    "wrench": "~1.3.9",
+    "underscore": "*"
   }
 }
