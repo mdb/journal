@@ -1,4 +1,4 @@
-/node_modules/*
-/build/*
-/.sass-cache/*
-/src/styles/stylesheets/*
+node_modules/*
+build/*
+.sass-cache/*
+src/styles/stylesheets
