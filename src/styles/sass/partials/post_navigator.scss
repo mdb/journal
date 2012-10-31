@@ -1,0 +1,19 @@
+@import "partials/global_imports";
+
+.post-navigator {
+  overflow:hidden;
+  margin-bottom:40px;
+
+  ul li {
+    list-style: none;
+    float: left;
+
+    &.next {
+      float: right;
+    }
+
+    a {
+      @include secondary_text
+    }
+  }
+}
