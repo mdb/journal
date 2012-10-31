@@ -5,8 +5,6 @@
   <meta http-equiv="Content-Language" content="en-us" />
   <meta name="copyright" content="Mike Ball" />
   <meta name="author" content="Mike Ball" />
-  <meta name="revisit-after" content="2 days" />
-  <meta name="robots" content="noarchive, NOODP, NOYDIR, ALL" />
   <title><?php bloginfo('name'); ?> <?php wp_title('-', true, 'left'); ?></title>
   <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico">
   <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php bloginfo('rss2_url'); ?>" />
