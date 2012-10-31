@@ -9,11 +9,11 @@ module.exports = function(grunt) {
   grunt.initConfig({
     meta: {
       version: '0.1.0',
-      banner: '/*! PROJECT_NAME - v<%= meta.version %> - ' +
+      banner: '/*! Journal - v<%= meta.version %> - ' +
         '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
-        '* http://www.yoursite.com/\n' +
+        '* http://www.mikeball.us\n' +
         '* Copyright (c) <%= grunt.template.today("yyyy") %> ' +
-        'Your Company; Licensed MIT */',
+        'Mike Ball; Licensed MIT */',
       wpblock: '/*\n' + 
         'Theme Name: Journal\n' +
         'Theme URI: http://www.mikeball.us\n' +
