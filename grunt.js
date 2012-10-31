@@ -26,7 +26,7 @@ module.exports = function(grunt) {
         '* @package WordPress\n' +
         '* @subpackage Journal\n' +
         '*/\n' +
-        '?php>\n'
+        '?>\n'
     },
     concat: {
       dist: {
@@ -64,7 +64,7 @@ module.exports = function(grunt) {
       }
     },
     environments: {
-      dev: '/Applications/MAMP/htdocs/mdb/wp-content/themes/journal'
+      dev: '/Applications/MAMP/htdocs/lps/wp-content/themes/journal'
     }
   });
 
