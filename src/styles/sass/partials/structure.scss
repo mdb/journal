@@ -1,0 +1,23 @@
+.container {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+header.masthead {
+  padding: 50px 10px 50px 30px;
+}
+
+.primary-content {
+  width: 500px;
+  float: left;
+  padding: 10px 0 100000px 30px;
+  margin-bottom: -100000px;
+}
+
+.secondary-content {
+  float: left;
+  padding: 10px 10px 100000px 30px;
+  width: 130px;
+  margin-bottom: -100000px;
+}

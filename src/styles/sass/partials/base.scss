@@ -1,0 +1,116 @@
+@import "global_imports.scss";
+
+// general
+* {
+  margin:0; padding:0;
+}
+
+body {
+  font-weight: normal;
+  color: $text_color;
+  font-size: $font_size;
+  font-family: $font_family;
+  line-height:1.4em;
+}
+
+article, section, header, nav, footer, small, time, form, input, button {
+  display: block;
+}
+
+cite {
+  font-style:normal;
+}
+
+pre {
+  background: $pale_background;
+  padding:0 10px 10px 10px;
+  margin:5px 0;
+}
+
+code {
+  font-family: courier;
+}
+
+a {
+  color: $link_color;
+
+  &:hover {
+    color: $text_color;
+  }
+}
+
+strong {
+  font-weight:bold;
+}
+
+// headings
+h1 {
+  font-size: 14px;
+}
+
+h1 a {
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 14px;
+  margin-bottom: 7px;
+  border-top: 1px dashed #555;
+  border-bottom: 1px dashed #ccc;
+  padding: 5px 0;
+  color: #000;
+
+  a {
+    text-decoration:none;
+    color:#000;
+    font-size:14px;
+
+    &:hover {
+      text-decoration:underline;
+    }
+  }
+}
+
+h3 {
+  color: #000;
+  font-size: 14px;
+}
+
+h4 {
+  color: #000;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 3px;
+}
+
+button, input {
+  font-size: 11px;
+}
+
+input, textarea {
+  margin-bottom: 5px;
+}
+
+table {
+  border-collapse: collapse;
+
+  td {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  padding:5px;
+  vertical-align:top;
+  
+    span {
+      color: $secondary_text_color;
+    }
+  }
+}
