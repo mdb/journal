@@ -23,7 +23,8 @@ module.exports = function(grunt) {
         'Version: <%= meta.version %>\n' + 
         '*/',
       wpphpbanner: '<?php /*\n' +
-        'blahp\n' +
+        '* @package WordPress\n' +
+        '* @subpackage Journal\n' +
         '*/\n' +
         '?php>\n'
     },
