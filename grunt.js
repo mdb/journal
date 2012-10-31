@@ -141,7 +141,6 @@ module.exports = function(grunt) {
         var content = banner + trimmedContent(contents);
 
         fs.writeFile(file, content, function (err) {
-          console.log('Adding banner to ' + file);
           if (err) { return console.log(err); }
         });
       }
