@@ -4,7 +4,7 @@ A simple Wordpress theme's source code managed via a Grunt build process.
 
 ## Why?
 
-Largely just a rough-around-the-edges experiment in better-managing an old Wordpress theme via an improved build process.
+Largely just a rough-around-the-edges experiment in better-managing an old Wordpress theme via an improved build process. Don't expect to be impressed.
 
 ## Usage
 
