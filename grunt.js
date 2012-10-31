@@ -57,6 +57,12 @@ module.exports = function(grunt) {
         forcecompile: true
       }
     },
+    images: {
+      dist: {
+        src: 'src/images',
+        dest: 'build/images'
+      }
+    },
     php: {
       dist: {
         src: 'src/php',
@@ -69,7 +75,7 @@ module.exports = function(grunt) {
   });
 
   // Default task.
-  grunt.registerTask('default', 'php phpsetup concat min compass cssmin');
+  grunt.registerTask('default', 'php phpsetup concat min compass cssmin images');
   
   // Compass tasks
   grunt.loadNpmTasks('grunt-compass');
@@ -86,6 +92,11 @@ module.exports = function(grunt) {
   grunt.registerTask('phpsetup', 'Add php banners to templates and remove whitespace', function() {
     var php = grunt.helper('setUpPHP');
     grunt.log.write(php);
+  });
+
+  grunt.registerTask('images', 'Move images to the build directory', function() {
+    var images = grunt.config.get('images');
+    wrench.copyDirSyncRecursive(images.dist.src, images.dist.dest);
   });
 
   // Deploy
