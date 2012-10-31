@@ -17,5 +17,5 @@
 <body <?php body_class(); ?>>
   <div class="container">
     <header role="masthead" class="masthead">
-      <h1><a title="<?php bloginfo('name'); ?> - Home" href="<?php bloginfo('home') ?>"><?php bloginfo('name'); ?></a></h1>
+      <h1><a title="<?php bloginfo('name'); ?> - Home" href="<?php bloginfo('url') ?>"><?php bloginfo('name'); ?></a></h1>
     </header>
