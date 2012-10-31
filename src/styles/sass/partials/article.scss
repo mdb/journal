@@ -1,0 +1,27 @@
+@import "partials/variables";
+
+article {
+  margin-bottom:40px;
+  
+  header time {
+    margin-bottom:15px;
+    color: $secondary_text_color;
+    font-family: $secondary_font_family;
+    font-size: $secondary_font_size;
+  }
+
+  section {
+    margin-bottom: 20px;
+  }
+
+  ul, article ol {
+    margin-bottom: 15px;
+  }
+  
+  footer small,
+  article footer small a {
+    font-family: $secondary_font_family;
+    color: $secondary_text_color;
+    font-size: $secondary_font_size;
+  }
+}
