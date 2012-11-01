@@ -14,7 +14,7 @@ module.exports = function(grunt) {
         '* http://www.mikeball.us\n' +
         '* Copyright (c) <%= grunt.template.today("yyyy") %> ' +
         'Mike Ball; Licensed MIT */',
-      wpblock: '/*\n' + 
+      wpblock: '/*!\n' + 
         'Theme Name: Journal\n' +
         'Theme URI: http://www.mikeball.us\n' +
         'Description: Basic Wordpress Journal Theme\n' +
@@ -22,7 +22,7 @@ module.exports = function(grunt) {
         'Author URI: http://www.mikeball.us\n' +
         'Version: <%= meta.version %>\n' + 
         '*/',
-      wpphpbanner: '<?php /*\n' +
+      wpphpbanner: '<?php /*!\n' +
         '* @package WordPress\n' +
         '* @subpackage Journal\n' +
         '*/\n' +
@@ -74,7 +74,6 @@ module.exports = function(grunt) {
     }
   });
   
-  // Load custom tasks form 'tasks' directory
   grunt.loadTasks('tasks');
 
   // Default task.
