@@ -4,6 +4,7 @@
   font-family: $secondary_font_family;
   font-size: $secondary_font_size;
   color: $secondary_text_color;
+  line-height: 15px;
 }
 
 @mixin standard_heading {
