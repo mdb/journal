@@ -1,6 +1,4 @@
 var grunt = require('grunt');
-
-var grunt = require('grunt');
 var wrench = require('wrench');
 
 grunt.registerTask('deploy', 'Deploy a build to the specified environment', function(environment) {
